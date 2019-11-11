@@ -79,7 +79,7 @@ public:
 	//Functions
 	virtual Person* clone()
 	{
-		return new Student(name, schoolName, stdNum, gpa);
+		return new Student(*this);
 	}
 
 	virtual void printOut()
@@ -130,7 +130,7 @@ public:
 	//Functions
 	virtual Person* clone()
 	{
-		return new SalaryMan(name, companyName, position, salary);
+		return new SalaryMan(*this);
 	}
 
 	virtual void printOut()
